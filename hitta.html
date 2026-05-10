@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitta — Ocean Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="container">
+     <header class="header">
+        <div class="header-left">
+           <div class="logo-icon">
+            <img src="img/loga.webp" alt="Hotel Logo">
+           </div>
+        </div>
+        <div class="header-right"></div>
+     </header>
+     <div class="nav-wrapper">
+         <span class="aktiv-sida">Hitta</span>
+     <nav>
+        <a href="index.html">Välkommen</a>
+        <a href="boka.html">Boka</a>
+        <a href="hitta.html" class="active">Hitta</a>
+        <a href="sevard.html">Sevärdheter</a>
+     </nav>
+     <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">
+      <span></span>
+      <span></span>
+      <span></span>
+     </button>
+     </div>
+     <main class="arts">
+        <article class="art">
+            <h2>Hitta hit</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit nesciunt commodi alias cupiditate est ullam illo? Quo, veritatis nemo voluptate facere, similique consequuntur id, animi ullam mollitia aspernatur ad consequatur.</p>
+        </article>
+        <article class="art">
+            <h2>Karta över området</h2>
+            <div class="karta-container">
+                     <iframe 
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.9745966920623!2d13.069654599999996!3d55.67204189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a33a57cb1a51%3A0x773485288a342ae8!2sStrandv%C3%A4gen%20123%2C%20234%2031%20Lomma!5e0!3m2!1ssv!2sse!4v1778446479375!5m2!1ssv!2sse" 
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+            </div>
+            
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+            </ul>
+        </article>
+     </main>
+     
+     <footer class="footer">
+      Hotel Ocean | Adress: Strandvägen 123, 12345 Havsstaden | Telefon: 012-3456789
+     </footer>
+
+    </div> 
+    <script>
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('show');
+    }
+    </script>
+
+</body>
+</html>
