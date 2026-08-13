@@ -1,0 +1,296 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #e8e8d8;
+}
+h1, h2, h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+}
+
+.header-left {
+    width: 120px;
+    min-width: 100px;
+    background-color: #f5f5e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left h1 {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #5a6b3a;
+    margin: 8px 0 0 0;
+    text-align: center;
+}
+
+.logo-icon img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.header-right {
+    flex: 1;
+    background-image: url(img/strandd.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #7cc7a0;
+    border-radius: 30px;
+    padding: 15px 25px;
+    margin: 20px 30px;
+}
+
+nav a.active {
+    border: 2px solid #1a2e0a;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #1a2e0a;
+    border-radius: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a2e0a;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.35);
+}
+
+main.arts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 35px;
+    gap: 50px;
+    margin-top: 65px;
+    margin-bottom: 80px;
+}
+
+article.art {
+    flex: 1 1 300px;
+    background-color: #9db87a;
+    padding: 20px;
+    border-radius: 25px;
+    color: #1a2e0a;
+}
+
+article.art h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #1a2e0a;
+}
+
+article.art p, article.art li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1a2e0a;
+}
+
+article.art ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.karta-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.karta-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    background: #7cc7a0;
+    color: #1a2e0a;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 0 30px 30px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.btn {
+    border-radius: 15px;
+    background-color: #7cc7a0;
+    color: #1a2e0a;
+    padding: 10px 20px;
+    border: 1px solid #1a2e0a;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5aa87a;
+}
+
+.sevard-vattenfall {
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+}
+
+.hitta-kartta {
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.aktiv-sida {
+    display: none;
+    color: #1a2e0a;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Formulär-styling */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #1a2e0a;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #7a9e5a;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+article.art input[type="radio"] {
+    margin-right: 5px;
+}
+
+@media (max-width: 700px) {
+    .aktiv-sida {
+        display: block;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-left, .header-right {
+        width: 100%;
+        min-width: 180px;
+    }
+
+    .header-left {
+        padding: 15px 0;
+    }
+
+    .nav-wrapper {
+        background: #7cc7a0;
+        margin: 20px 30px;
+        padding: 10px 15px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        right: 30px;
+        background: #7cc7a0;
+        border-radius: 15px;
+        padding: 15px;
+        flex-direction: column;
+        z-index: 100;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    main.arts {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    article.art {
+        flex: 1 1 auto;
+        min-width: auto;
+    }
+}

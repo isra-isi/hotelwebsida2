@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka — Ocean Hotel</title>
+    <meta name="description" content="Boka ditt rum på Ocean Hotel - En lyxig strandresort vid havet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="container">
+     <header class="header">
+        <div class="header-left">
+           <div class="logo-icon">
+            <img src="img/loga.webp" alt="Hotel Logo">
+            <h1>Ocean Hotel</h1>
+           </div>
+        </div>
+        <div class="header-right"></div>
+     </header>
+     <div class="nav-wrapper">
+        <span class="aktiv-sida">Boka</span>
+     <nav>
+        <a href="index.html">Välkommen</a>
+        <a href="boka.html" class="active">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="sevard.html">Sevärdheter</a>
+     </nav>
+     <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">
+      <span></span>
+      <span></span>
+      <span></span>
+     </button>
+     </div>
+     <main class="arts">
+        <article class="art">
+            <h2>Boka rum</h2>
+            <form>
+                <p><label for="fornamn">Förnamn:</label> <input type="text" id="fornamn"></p>
+                <p><label for="efternamn">Efternamn:</label> <input type="text" id="efternamn"></p>
+                <p><label for="rumstyp">Rumstyp:</label>
+                    <select id="rumstyp">
+                        <option>Enkelrum</option>
+                        <option>Dubbelrum</option>
+                    </select>
+                </p>
+                <p><label for="ovrigt">Övrigt:</label> <textarea id="ovrigt"></textarea></p>
+            </form>
+        </article>
+        <article class="art">
+            <h2>Frukost</h2>
+            <p><input type="radio" name="frukost" id="frukost-ja" checked> <label for="frukost-ja">Ja</label></p>
+            <p><input type="radio" name="frukost" id="frukost-nej"> <label for="frukost-nej">Nej</label></p>
+            <button class="btn">Skicka</button>
+        </article>
+     </main>
+     
+     <footer class="footer">
+      Hotel Ocean | Adress: Strandvägen 123, 12345 Havsstaden | Telefon: 012-3456789
+     </footer>
+
+    </div> 
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
